@@ -3,12 +3,12 @@ pipeline{
     stages{
         stage(' clean'){
             steps{
-            sh 'mvn clean' 
+            sh 'sudo mvn clean' 
             }
         }
         stage('Test'){
             steps{
-                sh 'mvn test'
+                sh 'sudo mvn test'
             }
         }
         stage('Deploy'){
